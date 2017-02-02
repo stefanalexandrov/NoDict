@@ -1,0 +1,29 @@
+// NoDict.idl : type library source for NoDict.exe
+
+// This file will be processed by the MIDL compiler to produce the
+// type library (NoDict.tlb).
+
+[ uuid(4D203EBA-C77D-4E0E-BF07-3C2E87A4C2ED), version(1.0) ]
+library NoDict
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	//  Primary dispatch interface for CNoDictDoc
+	
+	[ uuid(BC642DE5-49CD-4FEF-96C0-EDD78DFAD1DD) ]
+	dispinterface INoDict
+	{
+		properties:
+			
+		methods:
+	};
+
+	//  Class information for CNoDictDoc
+	
+	[ uuid(21F42050-6CC6-448F-8116-618F06707FD7) ]
+	coclass CNoDictDoc
+	{
+		[default] dispinterface INoDict;
+	};
+};
